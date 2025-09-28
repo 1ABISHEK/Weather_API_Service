@@ -1,14 +1,14 @@
 # 🌦️ Weather Application (Spring Boot + Angular)
 
 A **full-stack weather application** built with **Spring Boot (Backend)** and **Angular 15 (Frontend)**.  
-It provides **current weather**, **7-day forecasts**, and **location search** using the [OpenWeather API](https://openweathermap.org/).
+It provides **current weather**, **5-day forecasts**, and **location search** using the [OpenWeather API](https://openweathermap.org/).
 
 ---
 
 ## 🚀 Features
 - 🌍 Location search with latitude/longitude, state, and country  
 - 🌦️ Current weather (temperature, humidity, wind speed, min/max, feels_like)  
-- 📅 7-day forecast with conditions (rain, clouds, clear sky, etc.)  
+- 📅 5-day forecast with conditions (rain, clouds, clear sky, etc.)  
 - ❤️ User-friendly Angular UI with search, forecast cards, and map view  
 - ✅ Health check endpoint for backend monitoring  
 
@@ -16,7 +16,7 @@ It provides **current weather**, **7-day forecasts**, and **location search** us
 
 ## 🛠️ Tech Stack
 - **Backend**: Spring Boot 3, Java 17, Maven, Lombok, RestTemplate  
-- **Frontend**: Angular 15, TypeScript, Bootstrap, FontAwesome, Chart.js (optional), Leaflet (map support)  
+- **Frontend**: Angular 15, TypeScript, Bootstrap, FontAwesome, Leaflet (map support)  
 - **API Provider**: OpenWeather API  
 
 ---
