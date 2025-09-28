@@ -174,7 +174,15 @@ src/app
 ## 🧪 Testing
 
 - 📬 Use **Postman** for backend API testing  
-- 🌐 Use **Angular UI** for end-to-end testing  
+- 🌐 Use **Angular UI** for end-to-end testing
+  
+### 🎬 Project Demo
+
+<video width="640" height="360" controls>
+  <source src="videos/"C:\Users\abish\Videos\ScreenRecorderFiles\20250928\Demo Video.mp4"" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## Output:
 
