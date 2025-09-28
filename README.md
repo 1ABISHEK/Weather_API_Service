@@ -15,7 +15,7 @@ It provides **current weather**, **5-day forecasts**, and **location search** us
 ---
 
 ## 🛠️ Tech Stack
-- **Backend**: Spring Boot 3, Java 17, Maven, Lombok, RestTemplate  
+- **Backend**: Spring Boot, Java 17, Maven, Lombok, RestTemplate  
 - **Frontend**: Angular 15, TypeScript, Bootstrap, FontAwesome, Leaflet (map support)  
 - **API Provider**: OpenWeather API  
 
@@ -26,7 +26,6 @@ It provides **current weather**, **5-day forecasts**, and **location search** us
 ### 🔹 1. Clone the Repository
 ```
 git clone https://github.com/1ABISHEK/Weather_API_Service.git
-cd Weather_API_Service
 ```
 
 **##🔹 2. Backend Setup (Spring Boot)**
@@ -56,7 +55,7 @@ cd frontend
 
 **2. Install dependencies:**
 ```
-npm install
+npm install angular/@cli 15.2.11
 ```
 **3. Start Angular app:**
 ```
