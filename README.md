@@ -178,10 +178,7 @@ src/app
   
 ### 🎬 Project Demo
 
-<video width="640" height="360" controls>
-  <source src="videos/"C:\Users\abish\Videos\ScreenRecorderFiles\20250928\Demo Video.mp4"" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Click to watch demo video](videos/.mp4)
 
 
 ## Output:
