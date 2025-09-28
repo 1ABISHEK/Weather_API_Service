@@ -178,7 +178,7 @@ src/app
   
 ### 🎬 Project Demo
 
-[Click to watch demo video](videos/.mp4)
+[[Click to watch demo video](videos/.mp4)](https://github.com/user-attachments/assets/fd223032-71ed-4123-99ad-62333d1ea7cd)
 
 
 ## Output:
