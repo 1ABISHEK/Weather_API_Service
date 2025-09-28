@@ -71,8 +71,9 @@ ng serve --open
 ## 📡 API Endpoints
 
 ### 🟢 Health Check  
-**GET** `/health`  
-
+```pgsql
+GET /health 
+```
 **Response:**  
 ```json
 { 
@@ -82,11 +83,11 @@ ng serve --open
 ```
 
 **🟢 Location Search**
-```
+```pgsql
 GET /locations/search?q={city}
 ```
 **Response:**
-```
+```json
 [
   {
     "name": "Salem",
@@ -98,11 +99,11 @@ GET /locations/search?q={city}
 ]
 ```
 **🟢 Current Weather **
-```
+```pgsql
 GET /weather/current?location={city}
 ```
 **Response:**
-```
+```json
 {
   "location": "Chennai",
   "condition": "clear sky",
@@ -115,11 +116,11 @@ GET /weather/current?location={city}
 }
 ```
 **🟢 Forecast**
-```
+```pgsql
 GET /weather/forecast?location={city}&days={n}
 ```
 **Response:**
-```
+```json
 {
   "location": "Chennai",
   "days": 5,
@@ -136,7 +137,7 @@ GET /weather/forecast?location={city}&days={n}
 
 **Project Structure**
 **Backend**
-```
+```bash
 src/main/java/com/example/weatherapi
 │── controller/      # REST Controllers
 │── service/         # Business Logic
@@ -146,7 +147,7 @@ src/main/java/com/example/weatherapi
 ```
 
 **Frontend**
-```
+```bash
 src/app
 │── services/              # Weather + Location + Health services
 │── current-weather/       # Component for current weather + forecast
