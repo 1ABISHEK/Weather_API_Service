@@ -183,6 +183,8 @@ src/app
 
 ## Output:
 
+https://github.com/user-attachments/assets/fb7580a0-1b6f-4310-a52a-fc3444360fa0
+
 <img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/64912b01-726e-4e3a-bfc6-b94bc79d2bdc" />
 
 <img width="1920" height="1080" alt="Dashboard" src="https://github.com/user-attachments/assets/66da7494-66ff-43cb-a7f6-cc286b8c6ebf" />
