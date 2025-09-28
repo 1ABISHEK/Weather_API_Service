@@ -176,9 +176,10 @@ src/app
 - 📬 Use **Postman** for backend API testing  
 - 🌐 Use **Angular UI** for end-to-end testing  
 
+## Output:
 
-
-
+![Weather UI](assets/<img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/64912b01-726e-4e3a-bfc6-b94bc79d2bdc" />
+)
 
 
 
