@@ -27,7 +27,6 @@ It provides **current weather**, **5-day forecasts**, and **location search** us
 ```
 git clone https://github.com/1ABISHEK/Weather_API_Service.git
 cd Weather_API_Service
-
 ```
 
 **##🔹 2. Backend Setup (Spring Boot)**
@@ -43,7 +42,6 @@ server.port=8080
  ```
 mvn clean install
 mvn spring-boot:run
-
 ```
 
 **3. Backend will run at:**
@@ -54,13 +52,11 @@ mvn spring-boot:run
 **1. Navigate to frontend folder (if separate):**
 ```
 cd frontend
-
 ```
 
 **2. Install dependencies:**
 ```
 npm install
-
 ```
 **3. Start Angular app:**
 ```
@@ -76,7 +72,6 @@ ng serve --open
 **🟢 Health Check**
 ```
 GET /health
-
 ```
 
 **Response:**
@@ -99,7 +94,6 @@ GET /locations/search?q={city}
     "longitude": 78.1460
   }
 ]
-
 ```
 **🟢 Current Weather **
 ```
@@ -117,7 +111,6 @@ GET /weather/current?location={city}
   "humidity": 70,
   "windSpeed": 5.1
 }
-
 ```
 **🟢 Forecast**
 ```
@@ -148,7 +141,6 @@ src/main/java/com/example/weatherapi
 │── client/          # OpenWeather API client
 │── model/dto/       # DTOs for external API responses
 │── model/response/  # Responses returned to frontend
-
 ```
 
 **Frontend**
@@ -159,7 +151,6 @@ src/app
 │── search-location/       # Component for location search
 │── forecast-weather/      # Forecast graph/cards
 │── app.module.ts
-
 ```
 
 **🖥️ Frontend UI Highlights**
