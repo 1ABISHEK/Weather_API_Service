@@ -79,7 +79,7 @@ ng serve --open
   "status": "UP", 
   "timestamp": 1698765432123 
 }
-
+```
 
 **🟢 Location Search**
 ```
