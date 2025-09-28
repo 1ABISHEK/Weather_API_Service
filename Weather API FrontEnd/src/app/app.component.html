@@ -1,0 +1,42 @@
+<!-- <app-health></app-health> -->
+
+<!-- <app-current-weather></app-current-weather> -->
+
+<!-- <app-search-location></app-search-location> -->
+
+<!-- <app-forecast-weather></app-forecast-weather> -->
+
+
+<!-- If not logged in -->
+<div *ngIf="!isLoggedIn" class="login-container">
+  <h2>Login</h2>
+  <div class="form-group">
+    <input
+      type="text"
+      [(ngModel)]="username"
+      placeholder="Username"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="password"
+      [(ngModel)]="password"
+      placeholder="Password"
+      required
+    />
+  </div>
+  <button (click)="login()">Login</button>
+</div>
+
+<!-- If logged in, show weather dashboard -->
+<div *ngIf="isLoggedIn" class="dashboard-container">
+  <div class="header">
+  <h2>🌦 Current Weather Dashboard</h2>
+  <button class="logout-btn" (click)="logout()">Logout</button>
+</div>
+
+
+  <!-- Place your current-weather component here -->
+  <app-current-weather></app-current-weather>
+</div>

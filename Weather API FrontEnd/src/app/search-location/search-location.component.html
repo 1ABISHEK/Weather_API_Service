@@ -1,0 +1,20 @@
+<div class="search-bar">
+  <input
+    [(ngModel)]="query"
+    (input)="searchLocation()"
+    placeholder="Enter city"
+  />
+  <button (click)="searchLocation()">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+
+<!-- Dropdown -->
+<ul *ngIf="showDropdown && locationResults.length > 0" class="dropdown">
+  <li *ngFor="let loc of locationResults" (click)="selectLocation(loc)">
+    <strong>{{ loc.name }}</strong>
+    <span *ngIf="loc.state">, {{ loc.state }}</span>, {{ loc.country }}
+    <br />
+    <small>Lat: {{ loc.latitude }}, Lon: {{ loc.longitude }}</small>
+  </li>
+</ul>

@@ -1,0 +1,84 @@
+<div class="dashboard">
+  <!-- Left Panel -->
+  <div class="left-panel">
+    <!-- Search Bar with Dropdown -->
+    <div class="search-bar">
+      <input [(ngModel)]="location" (input)="searchLocation()" placeholder="Enter city" />
+      <button (click)="getWeather()"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Dropdown -->
+    <ul *ngIf="showDropdown && locationResults.length > 0" class="dropdown">
+      <li *ngFor="let loc of locationResults" (click)="selectLocation(loc)">
+        <strong>{{ loc.name }}</strong>
+        <span *ngIf="loc.state">, {{ loc.state }}</span>, {{ loc.country }}
+        <br />
+        <small>Lat: {{ loc.latitude }}, Lon: {{ loc.longitude }}</small>
+      </li>
+    </ul>
+
+    <!-- Current Weather Card -->
+    <div *ngIf="submitted && currentWeather" class="weather-main">
+      <div class="icon">
+        <i [class]="getWeatherIcon(currentWeather.temperature, currentWeather.condition)"></i>
+      </div>
+      <div class="temp">{{ currentWeather.temperature }}°C</div>
+      <div class="condition">{{ currentWeather.condition }}</div>
+      <div class="date-time">
+        {{ today | date:'fullDate' }} <br />
+      </div>
+      <div class="city">{{ location | titlecase }}</div>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div *ngIf="submitted && currentWeather" class="right-panel">
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-wind"></i>Wind: {{ currentWeather.windSpeed }} km/h</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-tint"></i>Humidity: {{ currentWeather.humidity }}%</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-thermometer-half"></i> Feels Like: {{ currentWeather.feels_like }}°C</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-thermometer-half"></i> Min Temp: {{ currentWeather.minTemp }}°C</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-thermometer-half"></i> Max Temp: {{ currentWeather.maxTemp }}°C</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-clock"></i>Time: {{ today | date:'shortTime' }}</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-cloud-sun"></i> Sunrise: {{ currentWeather.sunrise }}</div>
+    <div class="card" [ngClass]="getPanelClass()"><i class="fas fa-cloud-moon"></i> Sunset: {{ currentWeather.sunset }}</div>
+  </div>
+</div>
+
+<!-- Forecast + Map Section -->
+<div *ngIf="submitted && forecast.length > 0" class="forecast-map-wrapper">
+
+  <!-- Forecast Section -->
+  <div class="forecast">
+    <h3>Forecast</h3>
+    <div class="forecast-list">
+      <div *ngFor="let day of forecast" class="forecast-card" [ngClass]="getForecastClass(day.condition)">
+        <div class="day">{{ getDayName(day.date) }}</div>
+        <div class="day">{{ day.date }}</div>
+        <div class="icon">
+          <i [class]="getWeatherIcon(day.minTemp, day.condition)"></i>
+        </div>
+        <div class="temp">{{ day.minTemp }}°C / {{ day.maxTemp }}°C</div>
+        <div class="condition">{{ day.condition }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🌍 Location Map Section -->
+  <div class="worldmap-section">
+    <h3>Location Map</h3>
+    <div class="worldmap-container">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/2000px-World_map_-_low_resolution.svg.png" 
+        alt="World Map" 
+        class="worldmap-img" 
+      />
+
+      <!-- marker appears only after search -->
+      <div *ngIf="markerX && markerY"
+        class="map-marker"
+        [ngStyle]="{'top.%': markerY, 'left.%': markerX}"
+        [attr.data-coords]="location + ' — Lat: ' + selectedLat + ', Lon: ' + selectedLon">
+      </div>
+    </div>
+  </div>
+</div>
