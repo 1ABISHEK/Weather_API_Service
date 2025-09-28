@@ -68,16 +68,18 @@ ng serve --open
 
 
 
-**API Endpoints**
-**🟢 Health Check**
-```
-GET /health
-```
+## 📡 API Endpoints
 
-**Response:**
-```
-{ "status": "UP", "timestamp": 1698765432123 }
-```
+### 🟢 Health Check  
+**GET** `/health`  
+
+**Response:**  
+```json
+{ 
+  "status": "UP", 
+  "timestamp": 1698765432123 
+}
+
 
 **🟢 Location Search**
 ```
@@ -153,37 +155,26 @@ src/app
 │── app.module.ts
 ```
 
-**🖥️ Frontend UI Highlights**
+## 🖥️ Frontend UI Highlights
 
-Search Bar with Autocomplete (location search)
-
-Current Weather Panel:
-
-Temperature
-
-Condition
-
-Humidity
-
-Wind Speed
-
-Min/Max Temp
-
-Feels Like
-
-Forecast Cards (5 days)
-
-World Map Integration (Leaflet.js) with animated marker for searched city(Approximate)
-
-Responsive Design with Bootstrap & CSS grid
+- 🔍 **Search Bar with Autocomplete** (location search)  
+- 🌡️ **Current Weather Panel**:  
+  - Temperature  
+  - Condition  
+  - Humidity  
+  - Wind Speed  
+  - Min/Max Temp  
+  - Feels Like  
+- 📅 **Forecast Cards** (5–7 days)  
+- 🌍 **World Map Integration** (Leaflet.js) with animated marker for searched city  
+- 📱 **Responsive Design** with Bootstrap & CSS grid  
 
 
+## 🧪 Testing
 
-🧪 **Testing**
+- 📬 Use **Postman** for backend API testing  
+- 🌐 Use **Angular UI** for end-to-end testing  
 
-Use Postman for backend API testing
-
-Use Angular UI for end-to-end testing
 
 
 
