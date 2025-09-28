@@ -178,12 +178,14 @@ src/app
 
 ## Output:
 
-![Weather UI](assets/<img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/64912b01-726e-4e3a-bfc6-b94bc79d2bdc" />
-)
+<img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/64912b01-726e-4e3a-bfc6-b94bc79d2bdc" />
 
+<img width="1920" height="1080" alt="Dashboard" src="https://github.com/user-attachments/assets/66da7494-66ff-43cb-a7f6-cc286b8c6ebf" />
 
+<img width="1920" height="1080" alt="Location_Madurai" src="https://github.com/user-attachments/assets/4ca3b71e-0f9d-47d7-9ff6-fb6f3c100817" />
 
+<img width="1920" height="1080" alt="Sakha Republic" src="https://github.com/user-attachments/assets/dd9a0d01-5142-40f0-b94c-f845841568a4" />
 
+<img width="1920" height="1080" alt="Ladakh" src="https://github.com/user-attachments/assets/316285d4-c442-46f1-b29a-7fcf820f890a" />
 
-
-
+<img width="1024" height="610" alt="Map" src="https://github.com/user-attachments/assets/492786a5-99c6-41a6-83d7-6f5fc4fd4e76" />
